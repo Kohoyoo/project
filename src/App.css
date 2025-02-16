@@ -1,14 +1,21 @@
 body {
   background-color: pink;
+  height:200vh;
+  scroll-behavior: smooth;
 }
 
-.App-header {
-    position: absolute;
+.Blurb {
+    content: center;
     text-align:center; 
-    font-size: 1000%;
+    font-size: 20px;
     font-style: italic;
-    top:40%;
-    left:37.5%;
-    right:50%;
-    bottom:50%;
+    height:5%;
+    width:50%;
+    border: #000000 5px;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    margin: auto;
 }
