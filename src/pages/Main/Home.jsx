@@ -1,5 +1,7 @@
 import BIGFRONTIMAGE from "../../modules/BIGFRONTIMAGE";
 import Dropdown from "../../modules/Dropdown";
+import React from 'react';
+import './Home.css'
 
 export default function Home() {
 
