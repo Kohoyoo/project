@@ -1,45 +1,137 @@
-html {
-  scroll-behavior: smooth;
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background-color: beige;
-  height:200vh;
-  overflow:hidden;
+  font-family: 'Roboto', sans-serif; /* Modern font for body */
+  background-color: #f1f1f1; /* Eggshell White */
+  color: #333;
+  line-height: 1.6;
+  margin-top: 50%; /* Move everything down by 50px */
 }
 
-.Blurb {
-    content: center;
-    text-align:center; 
-    font-size: 20px;
-    font-style: italic;
-    height:fit-content;
-    width:50%;
-    border: dashed 2px black;
-    border-radius: 10px;
-    position: absolute;
-    left: 50vw;
-    top: 75vh;
-    transform: translate(-50%, -50%);
-    position: absolute;
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif; /* Bold font for headings */
+  color: #1a2a35;
 }
 
-.Dog {
-  border: dashed 2px black;
-  border-radius: 10px;
-  width:25vw;
-  position:absolute;
-  height:45vh;
-  left:50vw;
-  transform: translate(-110%, 30%)
+a {
+  text-decoration: none;
 }
 
-.sDog {
-  border: dashed 2px black;
-  border-radius: 10px;
-  width:25vw;
-  position:absolute;
-  height:45vh;
-  right: 25vw;
-  transform: translate(10%,30%)
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Content Row Styles */
+.content-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 15px; /* Space between text and image */
+}
+
+.content-row p {
+  flex: 1;
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.8;
+  margin-right: 15px; /* Space between text and image */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Text shadow for emphasis */
+}
+
+.content-row img {
+  flex: 0.8;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Image shadow */
+}
+
+.content-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* First and Second Paragraph Adjustments */
+.content-row.first-image {
+  margin-bottom: 10px; /* Smaller space after the first image */
+}
+
+.content-row.second-image {
+  margin-bottom: 30px; /* Larger space after the second paragraph */
+}
+
+/* Section Styles */
+section {
+  padding: 40px 20px; /* Slightly reduced padding for compact sections */
+  margin-bottom: 20px; /* Reduced margin between sections */
+}
+
+section p {
+  font-size: 1.3em;
+  text-align: justify;
+  line-height: 1.8;
+  color: #555;
+  margin: 10px 0;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Paragraph text shadow */
+}
+
+/* Call-to-action Section */
+.call-to-action {
+  background: #f9f9f9;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.call-to-action p {
+  font-size: 1.4em;
+  font-weight: 500;
+  color: #333;
+  padding: 10px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Text shadow */
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .content-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .content-row p {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .content-row img {
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    text-align: center;
+  }
 }
