@@ -1,11 +1,7 @@
-/* Global Styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+
 
 body {
+  overflow-x:hidden;
   font-family: 'Roboto', sans-serif; /* Modern font for body */
   background-color: #f1f1f1; /* Eggshell White */
   color: #333;
@@ -51,7 +47,8 @@ a {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Image shadow */
+  box-shadow: 0 0 20px grey;
+
 }
 
 .content-row.reverse {
@@ -87,6 +84,7 @@ section p {
   background: #f9f9f9;
   text-align: center;
   padding: 30px 20px;
+  box-shadow: 0 0 100px yellow;
 }
 
 .call-to-action p {

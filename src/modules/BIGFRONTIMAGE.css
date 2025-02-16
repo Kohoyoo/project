@@ -1,9 +1,15 @@
 .Big {
-    border: 4px solid black;  /* Corrected border */
-    border-radius: 10px;
     position: absolute;
-    width: 100vw;
-    height: 100vh;  /* Corrected to vh */
-    top: 0;  /* Position at the top of the viewport (adjust as needed) */
-    left: 0;  /* Position to the left of the viewport (adjust as needed) */
-}
+    width: 90vw;
+    height: 90vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(6.25%, 6.25%);
+    box-shadow: 0 0 100px orange;
+    border-radius: 10px;
+  }
+  
+ 
